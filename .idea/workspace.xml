@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="Rewrite README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。">
       <change beforePath="$PROJECT_DIR$/scipts/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/scipts/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +87,7 @@
       <updated>1741074022016</updated>
       <workItem from="1741074024697" duration="2530000" />
       <workItem from="1741076584375" duration="7283000" />
-      <workItem from="1741095658513" duration="2292000" />
+      <workItem from="1741095658513" duration="2826000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme.md">
       <option name="closed" value="true" />
@@ -194,7 +193,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741096151010</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。">
+      <option name="closed" value="true" />
+      <created>1741098477527</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741098477527</updated>
+    </task>
+    <task id="LOCAL-00015" summary="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。">
+      <option name="closed" value="true" />
+      <created>1741098496928</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741098496928</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +260,8 @@
     <MESSAGE value="Merge branch 'main' of https://github.com/Horrorange/ECUST-Artificial-Intelligence-Prof-Liu.Lishuai" />
     <MESSAGE value="proj01_test" />
     <MESSAGE value="Rewrite README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rewrite README.md" />
+    <MESSAGE value="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -255,6 +271,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Proj1$test.coverage" NAME="test 覆盖结果" MODIFIED="1741097947882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
+    <SUITE FILE_PATH="coverage/Proj1$test.coverage" NAME="test 覆盖结果" MODIFIED="1741098405911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
   </component>
 </project>
