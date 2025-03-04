@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="Merge branch 'main' of https://github.com/Horrorange/ECUST-Artificial-Intelligence-Prof-Liu.Lishuai" />
+    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="Merge branch 'main' of https://github.com/Horrorange/ECUST-Artificial-Intelligence-Prof-Liu.Lishuai">
+      <change afterPath="$PROJECT_DIR$/data/pokemon_go.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scipts/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/scipts/test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,17 +32,20 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2tqKAU8Cy7R4LI3LpdKAgrdbpkx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -52,6 +59,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Artificial Intelligence\Proj1\scipts" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -68,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741074022016</updated>
       <workItem from="1741074024697" duration="2530000" />
+      <workItem from="1741076584375" duration="4646000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme.md">
       <option name="closed" value="true" />
@@ -109,7 +122,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741076536718</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'main' of https://github.com/Horrorange/ECUST-Artificial-Intelligence-Prof-Liu.Lishuai">
+      <option name="closed" value="true" />
+      <created>1741076592113</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741076592113</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge branch 'main' of https://github.com/Horrorange/ECUST-Artificial-Intelligence-Prof-Liu.Lishuai">
+      <option name="closed" value="true" />
+      <created>1741076643584</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741076643584</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,12 +156,20 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First try" />
     <MESSAGE value="Add readme.md" />
     <MESSAGE value="Merge branch 'main' of https://github.com/Horrorange/ECUST-Artificial-Intelligence-Prof-Liu.Lishuai" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'main' of https://github.com/Horrorange/ECUST-Artificial-Intelligence-Prof-Liu.Lishuai" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="b" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Proj1$test.coverage" NAME="test 覆盖结果" MODIFIED="1741074299955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
+    <SUITE FILE_PATH="coverage/Proj1$test.coverage" NAME="test 覆盖结果" MODIFIED="1741081012248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
   </component>
 </project>
