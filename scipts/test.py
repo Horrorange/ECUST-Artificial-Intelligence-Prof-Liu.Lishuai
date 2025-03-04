@@ -35,7 +35,7 @@ train_data = total_data[:trainCount]
 test_data = total_data[trainCount:]
 
 # fitting parameters
-learningRate = 0.000015
+learningRate = 0.000014
 w = 2
 b = 2
 epochs = 500
