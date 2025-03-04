@@ -1,52 +1,58 @@
 import pandas as pd
 import numpy as np
+import random
 
 # def functions
-def loss(n, y_predicted, b, w, x):
-    return np.sum(np.pow((y_predicted - b - w * x), 2)) / n
+def loss(num, b, w, train_data):
+    ans = 0
+    for i in range(trainCount):
+        ans += np.pow((train_data[i][1] - b - w * train_data[i][0]), 2) / num
+    return ans
 
-def grad(n, y_predicted, b, w, x, lr):
+def grad(num, b, w, lr, train_data):
     return [
-        (-loss(n, y_predicted, b, w, x) + loss(n, y_predicted, b, w + lr, x)) / lr ,
-        (-loss(n, y_predicted, b, w ,x) + loss(n, y_predicted, b + lr, w ,x)) / lr
+        (-loss(num, b, w, train_data) + loss(num, b, w + lr, train_data)) / lr ,
+        (-loss(num, b, w, train_data) + loss(num, b + lr, w, train_data)) / lr
     ]
 
 # read the data
 path = "../data/pokemon_go.csv"
 data = pd.read_csv(path)
-cp = data[['cp']]
-poweredCp = data[['cp_new']]
+cp = data['cp'].tolist()
+poweredCp = data['cp_new'].tolist()
+
 
 # basic parameters
 dataCount = len(data)
 trainPercent = 0.8
-testPercent = 1 - trainPercent
+trainCount = int(dataCount * trainPercent)
 
 # training and test data initialization
-trainCp = cp[:int(dataCount * trainPercent)].values
-testCp = cp[int(dataCount * trainPercent):].values
-trainPoweredCp = poweredCp[:int(dataCount * trainPercent)].values
-testPoweredCp = poweredCp[int(dataCount * trainPercent):].values
+
+total_data = list(zip(cp, poweredCp))
+random.shuffle(total_data)
+train_data = total_data[:trainCount]
+test_data = total_data[trainCount:]
 
 # fitting parameters
-learningRate = 0.00002
+learningRate = 0.000015
 w = 2
 b = 2
 epochs = 500
 gradient = 0
 
-print("Loss=", loss(int(dataCount * trainPercent), trainPoweredCp, b, w, trainCp))
-print("Gradient= ", grad(int(dataCount * trainPercent), trainPoweredCp, b, w, trainCp, learningRate) )
+print("Loss=", loss(trainCount, b, w, train_data) )
+print("Gradient= ", grad(trainCount, b, w, learningRate, train_data) )
 print("w=",w,", b=",b)
 
 # fitting
 for i in range(epochs):
     gradient = grad(
-        dataCount * trainPercent, trainPoweredCp, b, w, trainCp, learningRate
+        trainCount, b, w, learningRate, train_data
     )
     print(
           "第",i,"次的Loss为",
-          loss(int(dataCount * trainPercent) , trainPoweredCp, b, w , trainCp),
+          loss(trainCount, b, w, train_data),
           "第",i,"次的Gradient为",
           gradient
     )
