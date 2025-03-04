@@ -7,8 +7,8 @@ def loss(n, y_predicted, b, w, x):
 
 def grad(n, y_predicted, b, w, x, lr):
     return [
-        (loss(n, y_predicted, b, w, x) - loss(n, y_predicted, b, w + lr, x)) / lr ,
-        (loss(n, y_predicted, b, w ,x) - loss(n, y_predicted, b + lr, w ,x)) / lr
+        (-loss(n, y_predicted, b, w, x) + loss(n, y_predicted, b, w + lr, x)) / lr ,
+        (-loss(n, y_predicted, b, w ,x) + loss(n, y_predicted, b + lr, w ,x)) / lr
     ]
 
 # read the data
@@ -31,7 +31,7 @@ testPoweredCp = poweredCp[int(dataCount * trainPercent):].values
 # fitting parameters
 learningRate = 0.00002
 w = 2
-b = 10
+b = 2
 epochs = 500
 gradient = 0
 
@@ -50,6 +50,6 @@ for i in range(epochs):
           "第",i,"次的Gradient为",
           gradient
     )
-    w += learningRate * gradient[0]
-    b += learningRate * 10000 * gradient[1]
+    w -= learningRate * gradient[0]
+    b -= learningRate * 10000 * gradient[1]
 print("w=",w,", b=",b)
