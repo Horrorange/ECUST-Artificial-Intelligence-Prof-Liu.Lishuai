@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。">
-      <change beforePath="$PROJECT_DIR$/scipts/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/scipts/test.py" afterDir="false" />
-    </list>
+    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。&#10;并且对学习率进行了调整，使其更好的适应全新的环境" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +85,7 @@
       <updated>1741074022016</updated>
       <workItem from="1741074024697" duration="2530000" />
       <workItem from="1741076584375" duration="7283000" />
-      <workItem from="1741095658513" duration="2826000" />
+      <workItem from="1741095658513" duration="2875000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme.md">
       <option name="closed" value="true" />
@@ -209,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741098496928</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。&#10;并且对学习率进行了调整，使其更好的适应全新的环境">
+      <option name="closed" value="true" />
+      <created>1741098535887</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741098535887</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +267,8 @@
     <MESSAGE value="proj01_test" />
     <MESSAGE value="Rewrite README.md" />
     <MESSAGE value="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。" />
+    <MESSAGE value="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。&#10;并且对学习率进行了调整，使其更好的适应全新的环境" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。&#10;并且对学习率进行了调整，使其更好的适应全新的环境" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
