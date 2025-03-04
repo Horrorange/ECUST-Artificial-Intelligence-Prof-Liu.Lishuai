@@ -59,5 +59,3 @@ for i in range(epochs):
     w -= learningRate * gradient[0]
     b -= learningRate * 10000 * gradient[1]
 print("w=",w,", b=",b)
-
-##
