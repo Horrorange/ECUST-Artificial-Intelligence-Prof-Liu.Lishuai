@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="beta 0.1.2 修改了学习率，增加了对测试集loss的计算，增加可视化内容">
+    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="beta 0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scipts/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/scipts/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scipts/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/scipts/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
     "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop__2",
+    "git-widget-placeholder": "develop",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -99,7 +99,7 @@
       <workItem from="1741095658513" duration="2875000" />
       <workItem from="1741139892172" duration="651000" />
       <workItem from="1741140556427" duration="462000" />
-      <workItem from="1741141069174" duration="4196000" />
+      <workItem from="1741141069174" duration="5539000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme.md">
       <option name="closed" value="true" />
@@ -253,7 +253,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741141383996</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="0.1.2 修改了学习率，增加了对测试集loss的计算，增加可视化内容">
+      <option name="closed" value="true" />
+      <created>1741145356773</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1741145356773</updated>
+    </task>
+    <task id="LOCAL-00021" summary="beta 0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率">
+      <option name="closed" value="true" />
+      <created>1741145455602</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1741145455602</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +324,9 @@
     <MESSAGE value="新增了随机的排列：之前我们只能选取数据中的前trainpercent%数据，目前可以对数据进行随机选择。&#10;并且对学习率进行了调整，使其更好的适应全新的环境" />
     <MESSAGE value="再次修改了学习率，因为0.000015的学习率在某些情况下也会溢出" />
     <MESSAGE value="beta 0.1.2 修改了学习率，增加了对测试集loss的计算，增加可视化内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta 0.1.2 修改了学习率，增加了对测试集loss的计算，增加可视化内容" />
+    <MESSAGE value="0.1.2 修改了学习率，增加了对测试集loss的计算，增加可视化内容" />
+    <MESSAGE value="beta 0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率" />
+    <option name="LAST_COMMIT_MESSAGE" value="beta 0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -318,7 +336,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Proj1$main.coverage" NAME="main 覆盖结果" MODIFIED="1741145306803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
+    <SUITE FILE_PATH="coverage/Proj1$main.coverage" NAME="main 覆盖结果" MODIFIED="1741145545486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
     <SUITE FILE_PATH="coverage/Proj1$test.coverage" NAME="test 覆盖结果" MODIFIED="1741141255557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
   </component>
 </project>

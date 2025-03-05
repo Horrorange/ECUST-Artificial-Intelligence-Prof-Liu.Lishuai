@@ -81,8 +81,8 @@ for i in range(len(x)):
     for j in range(len(w)):
         y[i] += w[j] * pow(x[i], j)
 plt.plot(x, y)
-# for i in range(trainCount):
-#     plt.scatter(train_data[i][0], train_data[i][1])
-for i in range(testCount):
-    plt.scatter(test_data[i][0], test_data[i][1])
+for i in range(trainCount):
+    plt.scatter(train_data[i][0], train_data[i][1])
+# for i in range(testCount):
+#     plt.scatter(test_data[i][0], test_data[i][1])
 plt.show()
