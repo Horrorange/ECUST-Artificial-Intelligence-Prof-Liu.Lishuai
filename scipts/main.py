@@ -11,23 +11,45 @@ def loss(w, data):
         ans = data[i][1]
         for j in range(len(w)):
             ans -= w[j] * np.pow(data[i][0] , j)
-        rms += pow(ans, 2)/len(data)
+        rms += pow(ans, 2) / len(data)
     return rms
 
 def grad(w, lr, data):
     ans = []
     loss_ini = loss(w, data)
     for i in range(len(w)):
-        w[i] += lr
+        w[i] += lr * 0.001
         ans.append(loss(w, data) - loss_ini)
-        w[i] -= lr
+        w[i] -= lr * 0.001
     return ans
+
+class Parameter:
+    def __init__(self):
+        self.w = []
+
+    def initialization(self, dimension, min, max):
+        for i in range(dimension):
+            self.w.append(random.randint(min, max))
+        return self.w
 
 # read the data
 path = "../data/pokemon_go.csv"
 data = pd.read_csv(path)
 cp = data['cp'].tolist()
 poweredCp = data['cp_new'].tolist()
+
+# class data:
+#     def __init__(self, independent_variable, dependent_variable, training_rate):
+#         if len(independent_variable) != len(dependent_variable):
+#             raise ValueError("independentVariable and dependentVariable should have same length")
+#         dataCount = len(independent_variable)
+#         trainCount = dataCount * training_rate
+#         testCount = dataCount - trainCount
+#
+#         total_data = list(zip(independent_variable, dependent_variable))
+#         random.shuffle(total_data)
+#         train_data = total_data[0:trainCount]
+#         test_data = total_data[trainCount:dataCount]
 
 
 # basic parameters
@@ -44,10 +66,11 @@ train_data = total_data[:trainCount]
 test_data = total_data[trainCount:]
 
 # fitting parameters
-learningRate = 0.000013
-learningRateMulti = [1000, 1000, 0.12]
-w = [0, 0, 0]
-epochs = 1000
+learningRate = 0.0013
+learningRateMulti = [10, 10, 0.047]
+para = Parameter()
+w = Parameter.initialization(para, 3, -50, 50)
+epochs = 500
 gradient = 0
 
 # test codes
@@ -60,7 +83,7 @@ for i in range(epochs):
     gradient = grad(
         w, learningRate, train_data
     )
-    if i % 20 == 0:
+    if (i + 1) % 20 == 0:
         print(
               "第",i + 1,"次的Loss为",
               loss(w, train_data),

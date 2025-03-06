@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="beta 0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率">
+    <list default="true" id="bbd5f499-9edb-4624-89b0-1788be01f54a" name="更改" comment="0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scipts/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/scipts/main.py" afterDir="false" />
     </list>
@@ -33,6 +33,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Horrorange&quot;
+  }
+}</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Horrorange/ECUST-Artificial-Intelligence-Prof-Liu.Lishuai.git&quot;,
@@ -56,23 +62,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.main.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Artificial Intelligence\Proj1\scipts" />
@@ -100,6 +106,9 @@
       <workItem from="1741139892172" duration="651000" />
       <workItem from="1741140556427" duration="462000" />
       <workItem from="1741141069174" duration="5539000" />
+      <workItem from="1741148159771" duration="635000" />
+      <workItem from="1741177134779" duration="672000" />
+      <workItem from="1741270406576" duration="1788000" />
     </task>
     <task id="LOCAL-00001" summary="Add readme.md">
       <option name="closed" value="true" />
@@ -269,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741145455602</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率">
+      <option name="closed" value="true" />
+      <created>1741148181762</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1741148181762</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +343,8 @@
     <MESSAGE value="beta 0.1.2 修改了学习率，增加了对测试集loss的计算，增加可视化内容" />
     <MESSAGE value="0.1.2 修改了学习率，增加了对测试集loss的计算，增加可视化内容" />
     <MESSAGE value="beta 0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta 0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率" />
+    <MESSAGE value="0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.1.3 增加对二次及高次曲线拟合的支持，增加了学习率乘数，可以对不同的变量设置不同的学习率" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -336,7 +354,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Proj1$main.coverage" NAME="main 覆盖结果" MODIFIED="1741145545486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
+    <SUITE FILE_PATH="coverage/Proj1$main.coverage" NAME="main 覆盖结果" MODIFIED="1741272185315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
     <SUITE FILE_PATH="coverage/Proj1$test.coverage" NAME="test 覆盖结果" MODIFIED="1741141255557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scipts" />
   </component>
 </project>
