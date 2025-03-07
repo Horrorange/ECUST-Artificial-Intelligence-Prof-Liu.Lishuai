@@ -28,84 +28,95 @@ class Parameter:
         self.w = []
 
     def initialization(self, dimension, min, max):
-        for i in range(dimension):
-            self.w.append(random.randint(min, max))
+        self.w  = [random.uniform(min, max) for i in range(dimension)]
         return self.w
+
+class ProcessedData:
+    def __init__(self, independent_variable, dependent_variable, training_rate):
+        if len(independent_variable) != len(dependent_variable):
+            raise ValueError("independentVariable and dependentVariable should have same length")
+        self.dataCount = len(independent_variable)
+        self.trainCount = int(self.dataCount * training_rate)
+        self.testCount = int(self.dataCount - self.trainCount)
+
+        self.total_data = list(zip(independent_variable, dependent_variable))
+        random.shuffle(self.total_data)
+        self.train_data = self.total_data[0:self.trainCount]
+        self.test_data = self.total_data[self.trainCount:self.dataCount]
+
+    def show_loss(self, w):
+        print("Loss= ",loss(w, self.train_data))
+
+    def show_grad(self, w, learning_rate):
+        print("Grad=", grad(w, learning_rate, self.train_data))
+
+    def regression_fitting_show_procedure(self, epochs, w, learning_rate):
+        for i in range(epochs):
+            gradient = grad(
+                w, learningRate, data.train_data
+            )
+            if (i + 1) % 20 == 0:
+                print(
+                    "第", i + 1, "次的Loss为",
+                    loss(w, data.train_data),
+                    "第", i + 1, "次的Gradient为",
+                    gradient
+                )
+            for i in range(len(w)):
+                w[i] -= learningRate * learningRateMulti[i] * gradient[i]
+        return w
+
+    def regression_fitting(self, epochs, w, learning_rate):
+        for i in range(epochs):
+            gradient = grad(
+                w, learningRate, data.train_data
+            )
+            for i in range(len(w)):
+                w[i] -= learningRate * learningRateMulti[i] * gradient[i]
+        return w
+
+    def plotting(self, w):
+        x = np.arange(0, 800, 10)
+        y = x.copy()
+        for i in range(len(x)):
+            y[i] *= 0
+            for j in range(len(w)):
+                y[i] += w[j] * pow(x[i], j)
+        plt.plot(x, y)
+        # for i in range(data.trainCount):
+        #     plt.scatter(data.train_data[i][0], data.train_data[i][1])
+        for i in range(self.testCount):
+            plt.scatter(self.test_data[i][0], self.test_data[i][1])
+        # plt.show()
 
 # read the data
 path = "../data/pokemon_go.csv"
-data = pd.read_csv(path)
-cp = data['cp'].tolist()
-poweredCp = data['cp_new'].tolist()
+allData = pd.read_csv(path)
+cp = allData['cp'].tolist()
+poweredCp = allData['cp_new'].tolist()
 
-# class data:
-#     def __init__(self, independent_variable, dependent_variable, training_rate):
-#         if len(independent_variable) != len(dependent_variable):
-#             raise ValueError("independentVariable and dependentVariable should have same length")
-#         dataCount = len(independent_variable)
-#         trainCount = dataCount * training_rate
-#         testCount = dataCount - trainCount
-#
-#         total_data = list(zip(independent_variable, dependent_variable))
-#         random.shuffle(total_data)
-#         train_data = total_data[0:trainCount]
-#         test_data = total_data[trainCount:dataCount]
+for i in range(10):
+    # data preprocess
+    data = ProcessedData(cp, poweredCp, 0.85)
 
 
-# basic parameters
-dataCount = len(data)
-trainPercent = 0.8
-trainCount = int(dataCount * trainPercent)
-testCount = dataCount - trainCount
-
-# training and test data initialization
-
-total_data = list(zip(cp, poweredCp))
-random.shuffle(total_data)
-train_data = total_data[:trainCount]
-test_data = total_data[trainCount:]
-
-# fitting parameters
-learningRate = 0.0013
-learningRateMulti = [10, 10, 0.047]
-para = Parameter()
-w = Parameter.initialization(para, 3, -50, 50)
-epochs = 500
-gradient = 0
-
-# test codes
-print("Loss=", loss(w, train_data) )
-print("Gradient= ", grad(w, learningRate, train_data) )
+    # fitting parameters
+    learningRate = 0.0013
+    learningRateMulti = [10, 10, 0.047]
+    para = Parameter()
+    w = Parameter.initialization(para, 3, -20, 20)
 
 
-# fitting
-for i in range(epochs):
-    gradient = grad(
-        w, learningRate, train_data
-    )
-    if (i + 1) % 20 == 0:
-        print(
-              "第",i + 1,"次的Loss为",
-              loss(w, train_data),
-              "第",i + 1,"次的Gradient为",
-              gradient
-        )
-    for i in range(len(w)):
-        w[i] -= learningRate * learningRateMulti[i] * gradient[i]
+    data.show_loss(w)
+    data.show_grad(w,learningRate)
 
-# testing_data_loss
-print("Test data的loss为：",loss(w, test_data))
-print("所求得的参数为：",w)
-# plot
-x = np.arange(0, 800, 10)
-y = x.copy()
-for i in range(len(x)):
-    y[i] *= 0
-    for j in range(len(w)):
-        y[i] += w[j] * pow(x[i], j)
-plt.plot(x, y)
-for i in range(trainCount):
-    plt.scatter(train_data[i][0], train_data[i][1])
-# for i in range(testCount):
-#     plt.scatter(test_data[i][0], test_data[i][1])
+    w = data.regression_fitting(1000, w, learningRate)
+    print(w)
+
+
+    # testing_data_loss
+    print("Test data的loss为：",loss(w, data.test_data))
+    print("所求得的参数为：",w)
+
+    data.plotting(w)
 plt.show()
